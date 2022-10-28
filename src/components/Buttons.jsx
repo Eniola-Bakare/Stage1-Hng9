@@ -1,7 +1,12 @@
-import {Stack, Button} from '@mui/material'
+import {Stack} from '@mui/material'
 
 const Buttons = () => {
     const buttonLinks = [
+      {
+        'name': 'Twitter',
+        'href': 'https://twitter.com/eebakare',
+        'id': 'btn_zuri'
+      },
       {
         'name': 'Zuri Team',
         'href': 'https://training.zuri.team',
@@ -34,7 +39,7 @@ const Buttons = () => {
       
     ]
   return (
-    <Stack spacing={2} direction='column'>
+    <Stack spacing={3} direction='column' className='btn_div'>
       <Stack spacing={2} direction='column'>
         {
           buttonLinks.map((link) => 
@@ -48,8 +53,8 @@ const Buttons = () => {
       </Stack>
 
       <Stack direction='row' spacing={2} className='slack_git'>
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" alt="slack-icon" style={{width: "25px"}}/>
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="git-icon" style={{width: "25px"}}/>
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" alt="slack-icon" style={{width: "25px"}} href='https://hng9.slack.com'/>
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="git-icon" style={{width: "25px"}} href='https://github.com/Eniola-Bakare'/>
       </Stack>
 
     </Stack>
