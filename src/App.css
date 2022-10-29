@@ -13,7 +13,7 @@ body{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: rgb(242, 247, 248);
+  /* background-color: rgb(242, 247, 248); */
   width: 100%;
   box-sizing: border-box;
 }
