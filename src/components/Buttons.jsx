@@ -22,19 +22,19 @@ const Buttons = () => {
         'name': 'Get Python for Beginners',
         'href': 'https://books.zuri.team/python-for-beginners?ref_id=@EniolaOluwa',
         'id': 'books__python',
-        // 'subtext': 'All books for design and code'
+        'subtext': 'Learn Python under the hood'
       },
       {
         'name': 'Check in with a Coach',
         'href': 'https://background.zuri.team',
         'id': 'pitch',
-        // 'subtext': 'All books for design and code'
+        'subtext': 'One to hold you through becoming a dev'
       },
       {
         'name': 'Get a book on Design(Free)',
         'href': 'https://books.zuri.team/design-rules',
         'id': 'book__design',
-        // 'subtext': 'All books for design and code'
+        'subtext': 'Learn the principles of design expertise'
       },
       
     ]
@@ -45,7 +45,13 @@ const Buttons = () => {
           buttonLinks.map((link) => 
             (
             <a href={link.href} className='btns'> 
-              <button id={link.id} >{link.name}</button>
+              <button
+                id={link.id}
+              >
+                {link.name}
+                <br/>
+                <span className='btns_subtext'>{link.subtext}</span>
+              </button>
             </a>
           )
           )
