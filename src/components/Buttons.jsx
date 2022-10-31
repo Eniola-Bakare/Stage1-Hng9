@@ -3,14 +3,14 @@ import {Stack} from '@mui/material'
 const Buttons = () => {
     const buttonLinks = [
       {
-        'name': 'Twitter',
+        'name': '@eebakare',
         'href': 'https://twitter.com/eebakare',
-        'id': 'btn_zuri'
+        'id': 'btn__zuri'
       },
       {
         'name': 'Zuri Team',
         'href': 'https://training.zuri.team',
-        'id': 'btn_zuri'
+        'id': 'btn__zuri'
       },
       {
         'name': 'Technical Books',
@@ -44,16 +44,12 @@ const Buttons = () => {
         {
           buttonLinks.map((link) => 
             (
-            <a href={link.href} className='btns'> 
-              <button
-                id={link.id}
-              >
-                {link.name}
-                <br/>
-                <span className='btns_subtext'>{link.subtext}</span>
-              </button>
-            </a>
-          )
+              <a href={link.href} id={link.id} className='btns'> 
+                  {link.name}
+                  <br/>
+                  {/* <span className='btns_subtext'>{link.subtext}</span> */}
+              </a>
+            )
           )
         }
       </Stack>
