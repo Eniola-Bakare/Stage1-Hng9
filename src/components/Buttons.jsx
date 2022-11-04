@@ -36,6 +36,12 @@ const Buttons = () => {
         'id': 'book__design',
         'subtext': 'Learn the principles of design expertise'
       },
+      {
+        'name': 'Contact me',
+        'href': '/contact',
+        'id': 'contact',
+        'subtext': 'Learn the principles of design expertise'
+      },
       
     ]
   return (

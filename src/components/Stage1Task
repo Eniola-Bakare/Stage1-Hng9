@@ -1,0 +1,11 @@
+import React from 'react'
+
+export const Stage1Task = () => {
+	return (
+		<div>
+			<Profile />
+      <Buttons />
+      <Footer />
+		</div>
+	)
+}
