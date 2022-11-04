@@ -1,8 +1,11 @@
-import React from 'react'
+import { Link, useNavigate } from "react-router-dom"
+
 
 const ContactMe = () => {
   return (
-    <div>Contact Me!</div>
+    <div>
+        Hello from Contact!!!!!!!!!
+    </div>
   )
 }
 
