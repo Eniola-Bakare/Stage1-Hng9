@@ -236,3 +236,31 @@ align-self: stretch;
 flex-grow: 0;
 
 }
+
+form span{
+  /* Hint text */
+
+width: 320px;
+height: 20px;
+
+/* Text sm/Medium */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+color: #F83F23;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.check_para{
+
+}
