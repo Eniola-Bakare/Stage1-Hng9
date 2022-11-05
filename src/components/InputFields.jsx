@@ -47,7 +47,12 @@ const InputFields = () => {
 
 			<Stack direction='column'spacing={3} >
 
-					<Stack direction='row' spacing={2}>
+					<Stack className='contact_heading'>
+						<p className='contact_title' > Contact me </p>
+						<p className='contact_subtitle' > Hi there, contact me to ask about anything you have in mind</p>
+					</Stack>
+
+					<Stack direction='row' spacing={2} className='firstN_lastN_div'>
 						<Stack>
 							<label>First Name </label>
 							<input id='first_name' value={firstName} onChange={e => setFirstName(e.target.value )} placeholder='Enter your first name' />
@@ -56,7 +61,7 @@ const InputFields = () => {
 								: ''}
 						</Stack>
 						
-						<Stack>
+						<Stack className='lastName'>
 							<label>Last Name</label>
 							<input id='last_name' value={lastName} onChange={e => setLastName (e.target.value)} placeholder='Enter your last name' />
 							{error && lastName.length <= 0
@@ -97,6 +102,7 @@ const InputFields = () => {
 						<Toast value={open} hide={4000} close={handleClose}/>
 					</Stack>
 			</Stack>
+
 		</form>
 	</Stack>
   )
