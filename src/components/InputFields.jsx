@@ -21,8 +21,9 @@ const InputFields = () => {
 	}
 
   return (
+	<Stack direction='row'  className="input_fields">
 		<form onSubmit={handleSubmit} >
-			<Stack className="input_fields" direction='column'spacing={2} >
+			<Stack direction='column'spacing={3} >
 					<Stack direction='row' spacing={2}>
 						<Stack>
 							<label>First Name </label>
@@ -47,7 +48,7 @@ const InputFields = () => {
 					</Stack>
 					<Stack className='message_div' >
 						<label>Message</label>
-						<input value={message} className='message_input' onChange={e => setMessage (e.target.value)} placeholder="Send me a message and I'll reply you as soon as possible..." type='text-area' />
+						<textarea value={message} className='message_input' onChange={e => setMessage (e.target.value)} placeholder="Send me a message and I'll reply you as soon as possible..."/>
 						{error && message.length <= 0
 							? <span>Please enter a message</span>
 							: ''
@@ -69,6 +70,7 @@ const InputFields = () => {
 					</Stack>
 			</Stack>
 		</form>
+	</Stack>
   )
 }
 
