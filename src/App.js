@@ -12,9 +12,6 @@ function App() {
         <Route path='/Stage1-Hng9' element={<Stage1Task />} />
         <Route path='/contact' element={<ContactMe />}/>
       </Routes>
-      {/* <Profile />
-      <Buttons />
-      <Footer /> */}
     </div>
   );
 }
