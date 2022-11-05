@@ -43,19 +43,19 @@ const InputFields = () => {
 					</Stack>
 					<Stack>
 							<label>Email</label>
-							<input value={email} onChange={e => setEmail (e.target.value)} placeholder='yourname@email.com' type='email' required/>
+							<input className='email_input' value={email} onChange={e => setEmail (e.target.value)} placeholder='yourname@email.com' type='email' required/>
 					</Stack>
-					<Stack>
+					<Stack className='message_div' >
 						<label>Message</label>
-						<input value={message} onChange={e => setMessage (e.target.value)} placeholder="Send me a message and I'll reply you as soon as possible..." type='text' />
+						<input value={message} className='message_input' onChange={e => setMessage (e.target.value)} placeholder="Send me a message and I'll reply you as soon as possible..." type='text-area' />
 						{error && message.length <= 0
 							? <span>Please enter a message</span>
 							: ''
 						}
 					</Stack>
 					<Stack direction='column'>
-						<Stack direction='row' >
-							<input value={checkBox} onChange={e => setCheckBox(!checkBox)} type='checkbox'/> <p className='check_para' >You agree to providing your data to Eniola who may contact you.</p>
+						<Stack direction='row' className='checkBox_div'  spacing={1}>
+							<input value={checkBox} onChange={e => setCheckBox(!checkBox)} type='checkbox'/> <p className='checkBox_para' >You agree to providing your data to Eniola who may contact you.</p>
 						</Stack>
 						{error && checkBox === false
 							? <span>* This is required</span>
