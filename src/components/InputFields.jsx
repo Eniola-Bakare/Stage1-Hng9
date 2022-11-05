@@ -53,10 +53,12 @@ const InputFields = () => {
 							: ''
 						}
 					</Stack>
-					<Stack direction='row'>
-						<input value={checkBox} onChange={e => setCheckBox(!checkBox)} type='checkbox'/> <p className='check_para' >You agree to providing your data to Eniola who may contact you.</p><br></br>
+					<Stack direction='column'>
+						<Stack direction='row' >
+							<input value={checkBox} onChange={e => setCheckBox(!checkBox)} type='checkbox'/> <p className='check_para' >You agree to providing your data to Eniola who may contact you.</p>
+						</Stack>
 						{error && checkBox === false
-							? <span>* this is required</span>
+							? <span>* This is required</span>
 							: ''
 						}
 					</Stack>
